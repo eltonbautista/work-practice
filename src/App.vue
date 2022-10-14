@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
 import TheNavbar from "./components/molecules/TheNavbar.vue";
 </script>
 
@@ -9,11 +8,15 @@ import TheNavbar from "./components/molecules/TheNavbar.vue";
       <!-- <nav>
 
         </nav> -->
-      <TheNavbar msg="hello" />
+      <TheNavbar logo="Logos" nav-label="Navigation" title="Our World" />
     </header>
 
     <router-view />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#app {
+  background: var(--white);
+}
+</style>
